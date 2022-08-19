@@ -1,14 +1,14 @@
 @font-face {
-  font-family: 'Roboto';
-  src: local('Roboto-Regular'), url('../fonts/HeliosCond.woff2') format('woff2'), url('../fonts/HeliosCond.woff') format('woff');
+  font-family: 'HeliosCond';
+  src: local('HeliosCond'), url('../fonts/HeliosCond.woff2') format('woff2'), url('../fonts/HeliosCond.woff') format('woff');
   font-display: swap;
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
-  src: local('Roboto-Bold'), url('../fonts/HeliosCond-Bold.woff2') format('woff2'), url('../fonts/HeliosCond-Bold.woff') format('woff');
+  font-family: 'HeliosCond-Bold';
+  src: local('HeliosCond-Bold'), url('../fonts/HeliosCond-Bold.woff2') format('woff2'), url('../fonts/HeliosCond-Bold.woff') format('woff');
   font-display: swap;
   font-weight: 700;
   font-style: normal;
@@ -34,7 +34,7 @@ img {
 }
 
 body {
-  font-family: 'Roboto', 'Montesarat', sans-serif;
+  font-family: 'HeliosCond', 'Montesarat', sans-serif;
 }
 
 .container {
@@ -92,7 +92,7 @@ table {
 }
 
 thead {
-  font-family: 'Roboto-Bold';
+  font-family: 'HeliosCond-Bold';
 
 }
 
