@@ -167,7 +167,7 @@ tbody>tr>td {
   position: absolute;
   background: transparent;
   border: none;
-  outline: 5px solid yellow;
+  /* outline: 5px solid yellow; */
 }
 
 
