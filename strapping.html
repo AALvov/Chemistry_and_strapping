@@ -23,6 +23,7 @@
     <button id="general_form">Общий вид </button>
     <button id="real__well">Реальная скважина </button>
     <a href="/" class="home__link">Главная</a>
+    <div class="table__buttons">
     <table style="color:rgb(0, 32, 96)">
       <thead>
       <tr>
@@ -84,13 +85,76 @@
           остатки бурового раствора, промывочной жидкости и&nbsp;др.</td>
       </tr>
     </table>
+    <button class="btn__first-first"></button>
+    <button class="btn__first-second"></button>
+    <button class="btn__second-first"></button>
+    <button class="btn__second-second"></button>
+    <button class="btn__third-first"></button>
+    <button class="btn__third-second"></button>
+    <button class="btn__fourth-first"></button>
+    <button class="btn__fourth-second"></button>
+    <button class="btn__fifth-first"></button>
+    <button class="btn__fifth-second"></button>
+    <button class="btn__sixth-first"></button>
+    <button class="btn__sixth-second"></button>
+
+
+  </div>
     <div class="modal__window" style="width: 90%;text-align:center;">
-      <video src="./video/11-12.mp4" autoplay="true" loop="true" width="90%"  controls></video>
+      <video src="./video/Скважина. Реальная скважина.mp4" autoplay="true" loop="true" width="90%"  controls></video>
     </div>
-    <div class="modal__window-second">
-      <video src="./video/11-12.mp4" autoplay="true" loop="true" controls></video>
+    <div class="modal__window-second" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Общий вид.mp4" autoplay="true" loop="true"   width="90%" controls></video>
     </div>
 
+    <div class="modal__window-first-first" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Подземное-1-2.mp4" autoplay="true" loop="true" width="30%"   controls></video>
+    </div>
+
+    <div class="modal__window-first-second" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Подземное-2.mp4" autoplay="true" loop="true" width="90%" muted  controls></video>
+    </div>
+
+    <div class="modal__window-second-first" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Фонтанка-1.mp4" autoplay="true" loop="true" width="40%"   controls></video>
+    </div>
+
+    <div class="modal__window-second-second" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Фонтанка-2.mp4" autoplay="true" loop="true" width="90%"  controls></video>
+    </div>
+
+    <div class="modal__window-third-first" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Подогреватель-1.mp4" autoplay="true" loop="true" width="90%"   controls></video>
+    </div>
+
+    <div class="modal__window-third-second" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Подогреватель-2.mp4" autoplay="true" loop="true" width="90%"  controls></video>
+    </div>
+
+    <div class="modal__window-fourth-first" style="width: 90%;text-align:center;">
+      <img src="./img/Скважина. БОУС-1-2.jpg"  width="75%" >
+    </div>
+
+    <div class="modal__window-fourth-second" style="width: 90%;text-align:center;">
+      <img src="./img/Скважина. БОУС-1-2.jpg"  width="75%" >
+    </div>
+
+
+    <div class="modal__window-fifth-first" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Факел-1.mkv" autoplay="true" loop="true" width="90%"   controls></video>
+    </div>
+
+    <div class="modal__window-fifth-second" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. Факел-2.mp4" autoplay="true" loop="true" width="90%"  controls></video>
+    </div>
+
+    <div class="modal__window-sixth-first" style="width: 90%;text-align:center;">
+      <video src="./video/Скважина. УГГ-1.mkv" autoplay="true" loop="true" width="90%"   controls></video>
+    </div>
+
+    <div class="modal__window-sixth-second" style="width: 90%;text-align:center;">
+      <img src="./img/Скважина. УГГ-2.JPG"  width="75%" >
+    </div>
 
   </div>
 
@@ -100,24 +164,107 @@
 
  let btn=document.querySelector('#general_form');
  let btn__well=document.querySelector('#real__well');
+ let btn__first_first=document.querySelector('.btn__first-first');
+ let btn__first_second=document.querySelector('.btn__first-second');
+ let btn__second_first=document.querySelector('.btn__second-first');
+ let btn__second_second=document.querySelector('.btn__second-second');
+ let btn__third_first=document.querySelector('.btn__third-first');
+ let btn__third_second=document.querySelector('.btn__third-second');
+ let btn__fourth_first=document.querySelector('.btn__fourth-first');
+ let btn__fourth_second=document.querySelector('.btn__fourth-second');
+ let btn__fifth_first=document.querySelector('.btn__fifth-first');
+ let btn__fifth_second=document.querySelector('.btn__fifth-second');
+ let btn__sixth_first=document.querySelector('.btn__sixth-first');
+ let btn__sixth_second=document.querySelector('.btn__sixth-second');
+
  let modal=document.querySelector('.modal__window');
+ let modal__seccond=document.querySelector('.modal__window-second');
+ let modal__first_first=document.querySelector('.modal__window-first-first');
+ let modal__first_second=document.querySelector('.modal__window-first-second');
+ let modal__second_first=document.querySelector('.modal__window-second-first');
+ let modal__second_second=document.querySelector('.modal__window-second-second');
+ let modal__third_first=document.querySelector('.modal__window-third-first');
+ let modal__third_second=document.querySelector('.modal__window-third-second');
+ let modal__fourth_first=document.querySelector('.modal__window-fourth-first');
+ let modal__fourth_second=document.querySelector('.modal__window-fourth-second');
+ let modal__fifth_first=document.querySelector('.modal__window-fifth-first');
+ let modal__fifth_second=document.querySelector('.modal__window-fifth-second');
+ let modal__sixth_first=document.querySelector('.modal__window-sixth-first');
+ let modal__sixth_second=document.querySelector('.modal__window-sixth-second');
+
  let close__btn=document.querySelector('.close__btn');
   close__btn.addEventListener('click',function() {
+    let modal=document.querySelector('.modal__window-active');
     modal.classList.toggle('modal__window-active');
     close__btn.style.display='none';
   })
  btn.addEventListener('click', function () {
-
-  modal.classList.add('modal__window-active');
+  modal__seccond.classList.add('modal__window-active');
   close__btn.style.display='block';
-
-
  })
  btn__well.addEventListener('click', function () {
-
 modal.classList.add('modal__window-active');
 close__btn.style.display='block';})
 
+btn__first_first.addEventListener('click', function() {
+  modal__first_first.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__first_second.addEventListener('click', function() {
+  modal__first_second.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__second_first.addEventListener('click', function() {
+  modal__second_first.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__second_second.addEventListener('click', function() {
+  modal__second_second.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__third_first.addEventListener('click', function() {
+  modal__third_first.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__third_second.addEventListener('click', function() {
+  modal__third_second.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__fourth_first.addEventListener('click', function() {
+  modal__fourth_first.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__fourth_second.addEventListener('click', function() {
+  modal__fourth_second.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__fifth_first.addEventListener('click', function() {
+  modal__fifth_first.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__fifth_second.addEventListener('click', function() {
+  modal__fifth_second.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__sixth_first.addEventListener('click', function() {
+  modal__sixth_first.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
+
+btn__sixth_second.addEventListener('click', function() {
+  modal__sixth_second.classList.add('modal__window-active');
+  close__btn.style.display='block';
+})
 </script>
 </body>
 </html>
