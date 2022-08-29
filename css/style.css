@@ -166,6 +166,7 @@ tbody>tr>td {
   position: absolute;
   background: transparent;
   border: none;
+  cursor: pointer;
   /* outline: 5px solid yellow; */
 }
 
@@ -174,6 +175,7 @@ tbody>tr>td {
 
 .btn__first-chemistry {
   top: 0;
+  cursor: pointer;
 }
 
 
