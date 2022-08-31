@@ -297,15 +297,15 @@ left: 0;
   display: flex;
   /* align-items: center; */
   justify-content: space-between;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 10px;
 
 }
 
 .chemistry__table {
-  width: 67%;
-  font-size: 24px;
+  width: 95%;
+  font-size: 22px;
 }
 
 
